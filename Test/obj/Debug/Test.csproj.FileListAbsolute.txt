@@ -1,0 +1,10 @@
+F:\Example\TestGlobalLogic\Test\Test\bin\Debug\Test.exe.config
+F:\Example\TestGlobalLogic\Test\Test\bin\Debug\Test.exe
+F:\Example\TestGlobalLogic\Test\Test\bin\Debug\Test.pdb
+F:\Example\TestGlobalLogic\Test\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+F:\Example\TestGlobalLogic\Test\Test\obj\Debug\Test.exe
+F:\Example\TestGlobalLogic\Test\Test\obj\Debug\Test.pdb
+F:\Example\TestGlobalLogic\Test\Test\bin\Debug\Newtonsoft.Json.dll
+F:\Example\TestGlobalLogic\Test\Test\bin\Debug\Newtonsoft.Json.xml
+F:\Example\TestGlobalLogic\Test\Test\obj\Debug\Test.csproj.CopyComplete
+F:\Example\TestGlobalLogic\Test\Test\obj\Debug\Test.csprojAssemblyReference.cache

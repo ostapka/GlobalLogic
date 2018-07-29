@@ -1,0 +1,50 @@
+{
+  "Name": "Project",
+  "DateCreated": "28.07.2018 2:53:23",
+  "Files": [
+    {
+      "Name": "directoryInfo.json",
+      "Size": "0 B",
+      "FilePath": "F:\\Project\\directoryInfo.json"
+    },
+    {
+      "Name": "directoryInfo1.json",
+      "Size": "582 B",
+      "FilePath": "F:\\Project\\directoryInfo1.json"
+    },
+    {
+      "Name": "directoryInfo2.json",
+      "Size": "582 B",
+      "FilePath": "F:\\Project\\directoryInfo2.json"
+    },
+    {
+      "Name": "New.txt",
+      "Size": "224 B",
+      "FilePath": "F:\\Project\\New.txt"
+    },
+    {
+      "Name": "Text.txt",
+      "Size": "3 B",
+      "FilePath": "F:\\Project\\Text.txt"
+    }
+  ],
+  "Children": [
+    {
+      "Name": "Subproject",
+      "DateCreated": "28.07.2018 3:16:39",
+      "Files": [
+        {
+          "Name": "NewText.txt",
+          "Size": "7008 B",
+          "FilePath": "F:\\Project\\Subproject\\NewText.txt"
+        },
+        {
+          "Name": "NewWord.docx",
+          "Size": "10035 B",
+          "FilePath": "F:\\Project\\Subproject\\NewWord.docx"
+        }
+      ],
+      "Children": []
+    }
+  ]
+}
