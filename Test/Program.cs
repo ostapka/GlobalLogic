@@ -54,26 +54,24 @@ namespace Test
         {
             Console.Write("What do you want to use JsonSerializer or Newtonsoft? ");
             string answer = Console.ReadLine();
-            if (answer == "JsonSerializer")
+            switch(answer)
             {
-                Serialize();
-            }
-            else if (answer == "Newtonsoft")
-            {
-                NewtonsoftSerialize();
-            }
-            else
-            {
-                throw new FormatException("Your answer is incorrect. You must specify JsonSerializer or Newtonsoft.");
+                case "JsonSerializer":
+                    SerializeAndWriteToFile(new FileStream(fileName, FileMode.Create));
+                    break;
+                case "Newtonsoft":
+                    SerializeAndWriteToFile(new StreamWriter(fileName));
+                    break;
+                default:
+                    throw new FormatException("Your answer is incorrect. You must specify JsonSerializer or Newtonsoft.");
             }
         }
 
         /// <summary>
-        /// Serialize with help JsonSerializer
+        /// Serialize with help JsonSerializer and write to file
         /// </summary>
-        public static void Serialize()
+        public static void SerializeAndWriteToFile(Stream file)
         {
-            Stream file = new FileStream(fileName, FileMode.Create);
             DataContractJsonSerializer ser = new
                                            DataContractJsonSerializer(typeof(DirectoriesInfo));
             ser.WriteObject(file, info);
@@ -81,11 +79,11 @@ namespace Test
         }
 
         /// <summary>
-        /// Serialize with help Newtonsoft.Json
+        /// Serialize with help Newtonsoft.Json and write to file
         /// </summary>
-        public static void NewtonsoftSerialize()
+        public static void SerializeAndWriteToFile(StreamWriter file)
         {
-            using (StreamWriter file = new StreamWriter(fileName))
+            using (file)
             {
                 string serialized = JsonConvert.SerializeObject(info, Formatting.Indented);
                 file.WriteLine(serialized);
